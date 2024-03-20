@@ -1,0 +1,1 @@
+This is the Day two task in zen class, in this task i have learned and write about the difference between document and window objects, these thing are done in this task.

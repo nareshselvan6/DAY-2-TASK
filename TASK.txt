@@ -1,0 +1,70 @@
+difference between document and window objects?
+
+*In Web development, the document and window objects are both 
+fundamental parts of the DOCUMENT OBJECT MODEL(DOM)
+
+*but they serve different purposes
+
+*************************************DOCUMENT*****************************************
+GENERAL POINTS AND POINTS WITH TITLE:-
+
+*it represent the html document loaded in the browser
+*it provides methods and properties to interact with the content of the document, such as create element()
+*it allows to manipulation of html elements, attributes an content within the document
+
+HIERARCHY:
+ * the document object represent the top level of the dom HIERARCHY
+ * it contains other objects such as document.documentelement, document.body
+
+CONTENT MANIPULATION: 
+ *It allows for dynamic manuplulation of the documents content , structure an styling using methods
+ *it styles using methods like Create element()
+
+ EVENTS:
+ *it provides event hanling capabilities such as addeventlistener()
+ *it allowing interaction with user actions like clicks, mouse movements,key presses
+
+FORMS:
+*supports form related operations such as accessing form
+*accesing forms suchas 
+   [i]getelementbyid()
+  [ii]getelementbyname()
+ [iii]getelementbytagname()
+
+Selectors:
+*it supports powerful css selectors methods like queryselector()
+*for selecting and manipulating the dom elements based css selectors
+
+*************************************Window*****************************************
+GENERAL POINTS AND POINTS WITH TITLE:-
+
+*represents the browser window tab that contains the dom document
+*it acts as the global object for javascript execution of the browser environment
+*it provides access to browser features and functionality, includind methods like alert(),settimeout()
+*also serves as the global scope for javascript variables and functions in the browser environment
+
+GLOBAL SCOPE:
+*serves as the global execution context for JavaScript in the browser, meaning variables and functions 
+*it declared without var, let, or const become properties of the window object
+
+BROWSER INTERACTION:
+*provides access to browser-specific functionality and properties like location, history, navigator, screen, localStorage
+*it allows manipulation of the browser window's size and position using properties like window.innerwidth, window.innerheight
+
+TIMERS:
+*enables scheduling of code execution with methods like settimeout(), setinterval()
+*it clearing those timers with cleartimeout() and clearinterval()
+
+NAVIGATION:
+*allows manipulation of the browser's navigation behavior through methods
+*this navigation like window.open(), window.close(), window.location
+
+COMMUNICATION:
+*facilitates communication between different windows or frames using methods like postmessage()
+*enables communication between frames within the same web page using the postmessage()
+
+ERROR HANDLING:
+*capture and handle javascript runtime errors using window.onerror event handler.
+*developers can use the window.onerror event handler to log error information to a server or a logging service,
+ helping to identify and troubleshoot issues in production environments.
+
